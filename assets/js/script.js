@@ -54,7 +54,7 @@ const lookupLocation = (search) => {
       console.log(myData);
 
       //gets the Weather for the cached location
-      let apiUrl = `${WEATHER_API_BASE_URL}/data/2.5/onecall?lat=${myData.lat}&lon=${mydata.lon}&units=imperial&exclude=minutely,hourly&units=imperial&appid=f23ee9deb4e1a7450f3157c44ed020e1`;
+      let apiUrl = `${WEATHER_API_BASE_URL}/data/2.5/onecall?lat=${myData.lat}&lon=${myData.lon}&units=imperial&exclude=minutely,hourly&units=imperial&appid=f23ee9deb4e1a7450f3157c44ed020e1`;
       console.log(apiUrl);
       fetch(apiUrl)
         .then((response) => response.json())
@@ -77,14 +77,14 @@ const displayCurrentWeather = (weatherData) => {
   const currentWeather = weatherData.current;
 
   // display the current weather at the top of the dashboard
-  document.getElementById("temp_value").textcontent = `${currentWeather.temp}*`;
+  document.getElementById("temp_value").textContent = `${currentWeather.temp}*`;
   document.getElementById(
     "wind_value"
-  ).textcontent = `${currentWeather.wind_speed}MPH`;
+  ).textContent = `${currentWeather.wind_speed}MPH`;
   document.getElementById(
     "humid_value"
-  ).textcontent = `${currentWeather.humidity}%`;
-  document.getElementById("uvi_value").textcontent = `${currentWeather.uvi}`;
+  ).textContent = `${currentWeather.humidity}%`;
+  document.getElementById("uvi_value").textContent = `${currentWeather.uvi}`;
 };
 
 const displayWeatherForecast = (weatherData) => {
@@ -146,7 +146,7 @@ const getWeather = (lat, lon) => {
 };
 
 // Display the weather for the cached location
-const displayWeather = (weatherdata) => {
+const displayWeather = (weatherData) => {
   document.getElementById(
     "location-name"
   ).textContent = `${weatherData.name}, ${weatherData.country}`;
