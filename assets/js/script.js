@@ -51,6 +51,11 @@ const lookupLocation = (search) => {
         lon: data[0].lon,
       };
 
+      // Store lookupLocation to local storage
+      function searchHistory() {
+        localStorage.setItem("search", JSON.stringify(search));
+      }
+
       console.log(myData);
 
       //gets the Weather for the cached location

@@ -1,5 +1,6 @@
 body {
   background-color: #6db3f2;
+  padding: 10px;
 }
 
 main {
@@ -31,7 +32,7 @@ aside {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  /* border: solid 1px red; */
+  border: solid 1px red;
 }
 
 .weather-info {
