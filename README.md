@@ -35,3 +35,4 @@ Accompanying JavaScript file was also created to run the quiz application
 ![weather_api_challenge](https://github.com/michaelcoder7/week-6-weather-api-challenge/assets/128432461/b4f64150-711d-400d-b146-e5d3f64c7ae1)
 
 ## Link to Deployed Website
+https://michaelcoder7.github.io/week-6-weather-api-challenge/
